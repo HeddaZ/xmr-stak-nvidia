@@ -18,8 +18,13 @@
  *     { "index" : 0, "threads" : 17, "blocks" : 60, "bfactor" : 0, "bsleep" :  0, "affine_to_cpu" : false},
  * ],
  */
-"gpu_threads_conf" : 
-null,
+"gpu_threads_conf" : [
+  { "index" : 0,
+    "threads" : 64, "blocks" : 6,
+    "bfactor" : 6, "bsleep" :  25,
+    "affine_to_cpu" : false,
+  },
+],
 
 /*
  * TLS Settings
@@ -40,8 +45,8 @@ null,
  * pool_password  - Can be empty in most cases or "x".
  */
 "pool_address" : "pool.supportxmr.com:3333",
-"wallet_address" : "",
-"pool_password" : "",
+"wallet_address" : "42rPYyfADXncfWQjwsADSY2GVpXqci6Gm5WHPcUcu1UVPT64LFreyH5PVByfn21NtZNGEYwLGBNF1Z6eYuUtoq5dMHuF9i3",
+"pool_password" : "x",
 
 /*
  * Network timeouts.
