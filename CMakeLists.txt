@@ -147,7 +147,7 @@ set(LIBS ${LIBS} ${CMAKE_THREAD_LIBS_INIT})
 ################################################################################
 
 option(MICROHTTPD_REQUIRED "Enable or disable the requirement of microhttp (http deamon)" ON)
-find_library(MHTD NAMES microhttpd)
+find_library(MHTD NAMES libmicrohttpd)
 if("${MHTD}" STREQUAL "MHTD-NOTFOUND")
     if(MICROHTTPD_REQUIRED)
         message(FATAL_ERROR "microhttpd NOT found: use `-DMICROHTTPD_REQUIRED=OFF` to build without http deamon support")
